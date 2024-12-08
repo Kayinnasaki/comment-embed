@@ -6,7 +6,9 @@ but unfortunately neocities, a great place for this kind of thing, has prohibiti
 The solutions, like with other comment boxes, is *iframes*. This setup allows you to call the script in an offsite. This repository is designed
 to be forked and modified, where you can publish it as a github page and add your own changes or CSS.
 
-If that's too much for you, I have published a version here that you can use, [https://kayinnasaki.github.io/comment-embed/](https://kayinnasaki.github.io/comment-embed/)
+If that's too much for you, I have published a version here that you can use. You won't be able to style the comments at all, but it's easy to drop in anywhere.
+
+[https://kayinnasaki.github.io/comment-embed/](https://kayinnasaki.github.io/comment-embed/)
 
 Going there alone only gives you a blank page, but by adding you **DID** and a *post ID**...
 
