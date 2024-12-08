@@ -1,6 +1,6 @@
 # Blue Sky Comment Embedding through iFrames
 
-I designed [Owner avatarbsky-comments](https://github.com/Kayinnasaki/bsky-comments) to embed bluesky replies as "comments" on small websites,
+I designed [bsky-comments](https://github.com/Kayinnasaki/bsky-comments) to embed bluesky replies as "comments" on small websites,
 but unfortunately neocities, a great place for this kind of thing, has prohibitive COR rules that prevents that script from running.
 
 The solutions, like with other comment boxes, is *iframes*. This setup allows you to call the script in an offsite. This repository is designed
