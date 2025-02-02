@@ -2,22 +2,21 @@
 <html>
     <head>
         <title>Comments</title>
-        <link rel="stylesheet" href="bsky-comments/comments.css">
+        <link rel="stylesheet" href="/bsky-comments/comments.css">
         <!-- Write your CSS own CSS by making a local sheet or even linking all the way to your neocities CSS -->
-        <link rel="stylesheet" href="comments.css">
-        <script src="bsky-comments/comments.js"></script>
+        <link rel="stylesheet" href="/comments.css">
+        <script src="/bsky-comments/comments.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5.3.2"></script>
         <base target="_PARENT">
     </head>
     <body>
         <div id="comments-container"></div>
         <script>
-            //ex: https://kayinnasaki.github.io/comment-embed/#did:plc:scmcyemdposb4vuidhztn2ui#3lbb32nb4322g
+            //ex: https://kayinnasaki.github.io/comment-embed/auto/#kayin.moe#https://kayin.moe/toyification#https://kayin.moe/user/themes/vela/css-compiled/custom.css
             const args = window.location.hash.substr(1);
             const hash = args.split("#");
-            const did = hash[0];
-            const post = hash[1];
-
+            const user = hash[0];
+            const url = hash[1];
             const cssUrl = hash[2];
 
             if (cssUrl) {
@@ -27,7 +26,7 @@
                 document.head.appendChild(link);
             }
 
-            loadComments("at://" + did + "/app.bsky.feed.post/" + post, { "renderOptions": { "sortOptions": { "tsKey": 'createdAt', "order": 'asc' } } })
+            discoverPost(user, { "renderOptions": { "discoverURL": url, discoverType: "oldest"} });
         </script>
     </body>
 </html>
